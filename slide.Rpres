@@ -15,12 +15,12 @@ BMI = Weight (kg) / (Height (m) * Height (m))
 Application
 ========================================================
 <small>I developed an application in which users can simply fill in their weight and height to check their BMI.
-For example, once an application user fill in his/her weight as 60kg and height as 160cm, the BMI is altomatically calculated;
+For example, when an application user fills in his/her weight as 60kg and height as 160cm, BMI is altomatically calculated as below;
 ```{r}
 BMI <- 60/(160/100)^2
 ```
 
-Moreover, the applicatio indicate which category you belong to based on the calculated BMI.
+Moreover, the applicatio indicates which category she/he belongs to based on the calculated BMI.
 ```{r}
 Class <- ifelse (BMI<18.5, "Underweight",
                  ifelse(BMI<25, "Normal Range",
@@ -32,8 +32,8 @@ Class
 Category table and BMI information
 ========================================================
 There are two more tubs in the application.
-Classification tub: a table showing categories with each BMI range
-BMI info tub: More detailed information about BMI
++ Classification tub: a table showing categories with each BMI range
++ BMI info tub: More detailed information about BMI
 
 
 Note
